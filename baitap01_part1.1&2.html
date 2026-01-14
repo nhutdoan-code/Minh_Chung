@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var Mmass = 78;
+        var Mheight = 1.69;
+        var Jmass = 92;
+        var Jheight = 1.95;
+        var MBMI = (Mmass/(Math.pow(Mheight, 2)));
+        var JBMI = (Jmass/(Math.pow(Jheight, 2)));
+        console.log(MBMI);
+        console.log(JBMI);
+        var markHigherBMI = MBMI > JBMI;
+        if (markHigherBMI) {
+            console.log(`Chỉ số BMI của Mark (${MBMI}) cao hơn chỉ số BMI của John (${JBMI})!`);
+        } else {
+            console.log('Join has a higher BMI than Mark');
+        }
+    </script>
+</body>
+</html>
