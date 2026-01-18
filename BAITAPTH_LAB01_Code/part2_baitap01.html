@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var calcAverage = (score1, score2, score3) => (score1 + score2 + score3) / 3;
+        var avgDolphins1 = calcAverage (85, 54, 41);
+        var avgKoalas1 = calcAverage(23, 32, 27);
+        function checkWinner(avgDolphins, avgKoalas) {
+            if (avgDolphins >= avgKoalas * 2) {
+                console.log(`Dolphins win (${avgDolphins} vs. ${avgKoalas})`);
+            } else if (avgKoalas >= avgDolphins * 2) {
+                console.log(`Koalas win (${avgKoalas} vs. ${avgDolphins})`);
+            } else {
+                console.log(`No team wins`);
+            }
+        }
+        checkWinner (avgDolphins1, avgKoalas1);
+    </script>
+</body>
+</html>

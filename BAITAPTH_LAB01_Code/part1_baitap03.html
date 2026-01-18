@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var Dolscore1 = 97;
+        var Dolscore2 = 112;
+        var Dolscore3 = 101;
+
+        var Koascore1 = 109;
+        var Koascore2 = 95;
+        var Koascore3 = 123;
+        //1. Tinh diem trung binh cua moi doi
+        var Dolavg = (Dolscore1 + Dolscore2 + Dolscore3) / 3;
+        var Koaavg = (Koascore1 + Koascore2 + Koascore3) / 3;
+
+        //2. So sanh diem trung binh cua moi doi
+        if (Dolavg > Koaavg && Dolavg >= 100) {
+            console.log('Dolphins is winner');
+        }
+        else if (Koaavg > Dolavg && Koaavg >= 100) {
+            console.log('Koalas is winner');
+        }
+        else if (Dolavg === Koaavg && Dolavg >= 100 && Koaavg >= 100) {
+            console.log('The two teams drew');
+        }
+        else {
+            console.log('No team wins the trophy');
+        }
+    </script>
+</body>
+
+</html>
